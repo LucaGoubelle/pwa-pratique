@@ -1,6 +1,6 @@
-/*console.log('hello depuis main');
+console.log('hello depuis main');
 const technosDiv = document.querySelector('#technos');
-if(navigator.serviceWorker){
+/*if(navigator.serviceWorker){
     navigator.serviceWorker.register('sw.js').catch(err => console.error('service worker NON enregistré',err))
 }*/
 
@@ -45,7 +45,7 @@ if(navigator.serviceWorker) {
         
         	// tentative d'obtention d'une souscription
             // public vapid key générée par web-push, en prod appel d'api via fetch plutôt que static
-            const publicKey = "BAqPpl5snI2RR6wkcuSzdvZWGeEqNk4GGJvMWpTqrepaOrEqknEAS5dfcOakn0mSrh7o0PAYv8Urt8GUdCzILvw";
+            const publicKey = "BD1wuu7vwSfyIWDtvTBgt9Xt09eSVe8ykmD6Zop8LeO7Lw1BWf2X5fPs3qzrE1eRjKHOz5pVjZcO15-0l8euWUg";
             registration.pushManager.getSubscription().then(subscription => {
             
             	// Déjà une souscription, on l'affiche
